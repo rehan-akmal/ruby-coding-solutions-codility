@@ -1,4 +1,3 @@
-def solution(a)
-  return 0 if a.length != a.uniq.length
-  (1..a.length).inject(:+) == a.inject(:+)? 1 : 0
+def solution(a, b, k)
+  ((b/k.to_f).floor - (a/k.to_f).ceil) + 1
 end
